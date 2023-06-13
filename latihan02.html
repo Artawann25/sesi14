@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan jQuery</title>
+</head>
+<body>
+
+    <h3>Judul From</h3>
+
+    <div id="navigasi">
+        <button type="button" class="persegi">Hitung Luas Persegi</button>
+        <button type="button" class="segi3">Hitung Luas Persegi</button>
+    </div>
+    <div id="HitungLuasPersegi"></div>
+        <div>
+                Nilai Panjang
+                <input type="number" class="PJ" size="PJ">
+
+            <div>
+                Nilai Lebar
+                <input type="number" class="LB">
+
+                <div>
+            <button type="button" class="cmdLPersegi3">Hitung Luas</button>
+                Nilai Alas
+                    <input type="number" class="AL">
+                 </div>
+
+                 <div>
+                Nilai Tinggi
+                    <input type="number" class="TG">
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="cmdLSegi3">Hitung Luas</button>
+        </div>
+            
+    <div id="HitungLuasSegi3 "></div>
+    <div id="hasil">Hasilnya</div>
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#hasil").hide();
+            $("#HitungLuasSegi3").hide();
+            $("#HitungLuasPersegi").hide();
+
+            let judul = "Klik Tombol";
+           
+
+        $(".segi3").click(function(){
+            $("HitungLuasSegi3").hide(500);
+            $("HitungLuasPersegi").show(500);
+        }
+
+
+        $(".persegi").click(function(){
+            $("HitungLuasSegi3").hide(500);
+            $("HitungLuasPersegi").show(500);
+        }
+
+        $("h3").html(judul);
+
+        $(".cmdlpersegi").click(function(){
+             // get input nilai
+        let P = $(".PJ").val();
+        let L = $(".LB").val();
+    })
+
+    })
+    </script>
+    
+</body>
+</html>
